@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cream Stone</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for smooth scrolling and hover effects */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-100 via-white to-blue-100 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white bg-opacity-70 backdrop-blur-md fixed w-full z-50 shadow-lg">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Updated: Changed store name to Cream Stone -->
+            <a href="#" class="text-3xl font-bold text-pink-600 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 mr-2">
+                    <path d="M12 21.75a3.75 3.75 0 0 1-3.75-3.75V12a3.75 3.75 0 0 1 7.5 0v6a3.75 3.75 0 0 1-3.75 3.75z" />
+                    <path fill-rule="evenodd" d="M12 2.25a6.75 6.75 0 0 1 6.75 6.75v1.5a.75.75 0 0 1-1.5 0V9a5.25 5.25 0 1 0-10.5 0v1.5a.75.75 0 0 1-1.5 0V9A6.75 6.75 0 0 1 12 2.25z" clip-rule="evenodd" />
+                </svg>
+                Cream Stone
+            </a>
+            <div class="hidden md:flex space-x-6 lg:space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-pink-600 transition duration-300">About</a>
+                <a href="#menu" class="text-gray-600 hover:text-pink-600 transition duration-300">Menu</a>
+                <a href="#contact" class="text-gray-600 hover:text-pink-600 transition duration-300">Contact</a>
+            </div>
+            <a href="#menu" class="md:hidden bg-pink-500 text-white px-4 py-2 rounded-full font-semibold shadow-md btn-hover transition duration-300">Menu</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative bg-pink-300 bg-opacity-70 h-screen flex items-center justify-center text-center p-4">
+            <!-- Background overlay with a subtle gradient effect -->
+            <div class="absolute inset-0 bg-gradient-to-b from-pink-400/50 to-white/50"></div>
+            <div class="relative z-10 max-w-2xl mx-auto">
+                <!-- Updated: Changed store name to Cream Stone -->
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white drop-shadow-lg mb-4">
+                    Cream Stone
+                </h1>
+                <p class="text-xl sm:text-2xl text-white font-semibold mb-8 drop-shadow-md">
+                    Scoops of happiness in every flavor.
+                </p>
+                <a href="#menu" class="bg-white text-pink-500 font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:bg-pink-100 transition duration-300 btn-hover">
+                    Explore Our Flavors
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="container mx-auto px-4 py-16 sm:py-24">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/94A3B8/FFFFFF?text=About+Us" alt="A scoop of ice cream" class="rounded-3xl shadow-xl w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-4xl font-bold mb-4 text-pink-600">Our Story</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        At Cream Stone, we believe that the best moments are shared over a delicious scoop of ice cream. We craft our flavors using only the freshest, locally-sourced ingredients to bring you a unique and unforgettable taste experience. From classic vanilla to adventurous new combinations, there's a flavor for everyone to love.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="bg-pink-50 px-4 py-16 sm:py-24">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-pink-600 mb-12">Our Delicious Flavors</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Menu Item 1 -->
+                    <div class="bg-white rounded-3xl p-6 shadow-xl text-center card-hover transition duration-300">
+                        <img src="https://placehold.co/400x300/FEE2E2/B91C1C?text=Strawberry" alt="Strawberry Ice Cream" class="rounded-2xl w-full h-auto object-cover mb-4">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Strawberry Dream</h3>
+                        <p class="text-gray-600">Fresh strawberries blended into a creamy, dreamy delight.</p>
+                    </div>
+
+                    <!-- Menu Item 2 -->
+                    <div class="bg-white rounded-3xl p-6 shadow-xl text-center card-hover transition duration-300">
+                        <img src="https://placehold.co/400x300/FDE68A/D97706?text=Chocolate" alt="Chocolate Ice Cream" class="rounded-2xl w-full h-auto object-cover mb-4">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Rich Chocolate</h3>
+                        <p class="text-gray-600">A decadent, rich chocolate flavor for the true connoisseur.</p>
+                    </div>
+
+                    <!-- Menu Item 3 -->
+                    <div class="bg-white rounded-3xl p-6 shadow-xl text-center card-hover transition duration-300">
+                        <img src="https://placehold.co/400x300/D1FAE5/065F46?text=Mint+Chip" alt="Mint Chip Ice Cream" class="rounded-2xl w-full h-auto object-cover mb-4">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Mint Chocolate Chip</h3>
+                        <p class="text-gray-600">Cool mint with a generous helping of chocolate chips.</p>
+                    </div>
+
+                    <!-- Menu Item 4 -->
+                    <div class="bg-white rounded-3xl p-6 shadow-xl text-center card-hover transition duration-300">
+                        <img src="https://placehold.co/400x300/DBEAFE/1E40AF?text=Vanilla" alt="Vanilla Ice Cream" class="rounded-2xl w-full h-auto object-cover mb-4">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Classic Vanilla</h3>
+                        <p class="text-gray-600">Timeless and perfect. The smoothest vanilla you'll ever taste.</p>
+                    </div>
+
+                    <!-- Menu Item 5 -->
+                    <div class="bg-white rounded-3xl p-6 shadow-xl text-center card-hover transition duration-300">
+                        <img src="https://placehold.co/400x300/FEF2F2/991B1B?text=Cookie+Dough" alt="Cookie Dough Ice Cream" class="rounded-2xl w-full h-auto object-cover mb-4">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Cookie Dough Delight</h3>
+                        <p class="text-gray-600">Our signature dough mixed with a rich and creamy base.</p>
+                    </div>
+
+                    <!-- Menu Item 6 -->
+                    <div class="bg-white rounded-3xl p-6 shadow-xl text-center card-hover transition duration-300">
+                        <img src="https://placehold.co/400x300/D1D5DB/4B5563?text=Coffee" alt="Coffee Ice Cream" class="rounded-2xl w-full h-auto object-cover mb-4">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Espresso Crunch</h3>
+                        <p class="text-gray-600">Bold coffee flavor with chocolate-covered espresso beans.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto px-4 py-16 sm:py-24">
+            <h2 class="text-4xl font-bold text-center text-pink-600 mb-12">Visit Us</h2>
+            <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl p-8 sm:p-12">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">Our Location</h3>
+                        <p class="text-gray-600 mb-2">123 Sweet Street,</p>
+                        <p class="text-gray-600 mb-4">Scoopville, CA 12345</p>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">Hours of Operation</h3>
+                        <ul class="text-gray-600">
+                            <li>Mon - Fri: 12:00 PM - 10:00 PM</li>
+                            <li>Sat - Sun: 11:00 AM - 11:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">Get in Touch</h3>
+                        <form action="#" method="POST" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-pink-500 text-white font-bold py-3 px-4 rounded-md shadow-lg hover:bg-pink-600 transition duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Cream Stone. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
